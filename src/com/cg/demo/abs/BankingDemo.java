@@ -12,7 +12,7 @@ interface StateGovtRules {
 
 class RBI { // abstract class
 	// Overridden
-//	public abstract void doKyc(); // what? - Yes How? - No , abstract method
+//	public abstract void doKyc(); // (what? - Yes), (How? - No) -abstract method
 	public void test() {
 		System.out.println("Test RBI");
 	}
@@ -26,7 +26,7 @@ public void openAccount() { // abstract class can have concrete class
 class HDFC extends RBI implements CentralGovtRules, StateGovtRules { // concrete class
 	
 	//@Override
-	public void doKyc() {// what? - Yes How? - Yes, concrete method
+	public void doKyc() {// (what? - Yes) (How? - Yes)- concrete method
 		System.out.println("Aadhar");
 		
 	}
